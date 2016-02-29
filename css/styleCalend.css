@@ -1,0 +1,32 @@
+ul#moisHorizontal li
+{
+	display : inline;
+	padding : 0 0.5em;
+}
+
+ul#moisHorizontal
+{
+	width : 600px;
+	height: 25px;
+	list-style-type :none;
+}
+
+/*.tableau1
+{
+	border-width:1px; 
+	border-style:solid; 
+	border-color: red;
+}
+table {
+ border-width:1px; 
+ border-style:solid; 
+ border-color:red;
+ width:50%;
+ margin: 5%;
+ }
+td { 
+ border-width:1px;
+ border-style:solid; 
+ border-color:red;
+ width:50%;
+ } */

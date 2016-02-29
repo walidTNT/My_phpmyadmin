@@ -1,0 +1,230 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 15px; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: black;
+	background: #e8e7e3;
+}
+.titre
+{
+	color: black;
+	position: relative;
+	right: 170px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+.footer
+{
+	position: absolute;
+	top: 135%;
+	left: 15%;
+	color: white;
+
+}
+
+a:hover {
+	color: #fff;
+}
+
+.main,
+.container > header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;
+	position: relative;
+	left: 175px;
+	top: -30px;
+}
+
+.main {
+	max-width: 82.667em;
+	min-height: 40em;
+}
+
+.container > header {
+	text-align: center;
+	font-size: 16px;
+	padding: 4em 2em 3em;
+	background: rgba(0,0,0,0.01);
+}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #ceccc6;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* Header Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	position: relative;
+	width: 100%;
+	font-size: 0.7em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.9);
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+.codrops-icon-next:before {
+	content: "\e000";
+}
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+@media screen and (max-width: 25em) { 
+	.codrops-icon span {
+		display: none;
+	}
+	.container > header {
+		font-size: 75%;
+	}
+}
+
+.image
+{
+	margin: 0 auto;
+     width: 500px;
+     position: absolute;
+     top: 77.5%;
+     left: 30.75%;
+}
+
+.bouton a {
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:url(img/boutonNoir.png) no-repeat;
+color:white;
+text-decoration:none;
+}
+.bouton a:hover {
+background:url(img/boutonNoir.png) no-repeat;
+}
+
+.deconnexion {
+   border: 3px solid #7097db;
+   background: #5e5ed1;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9678db), to(#5e5ed1));
+   background: -webkit-linear-gradient(top, #9678db, #5e5ed1);
+   background: -moz-linear-gradient(top, #9678db, #5e5ed1);
+   background: -ms-linear-gradient(top, #9678db, #5e5ed1);
+   background: -o-linear-gradient(top, #9678db, #5e5ed1);
+   background-image: -ms-linear-gradient(top, #9678db 0%, #5e5ed1 100%);
+   padding: 9px 18px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7774de 0 1px 0;
+   color: #ffffff;
+   font-size: 15px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.deconnexion:hover {
+   border: 3px solid #6a57d9;
+   text-shadow: #000000 0 1px 0;
+   background: #4b42cc;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6849bd), to(#4b42cc));
+   background: -webkit-linear-gradient(top, #6849bd, #4b42cc);
+   background: -moz-linear-gradient(top, #6849bd, #4b42cc);
+   background: -ms-linear-gradient(top, #6849bd, #4b42cc);
+   background: -o-linear-gradient(top, #6849bd, #4b42cc);
+   background-image: -ms-linear-gradient(top, #6849bd 0%, #4b42cc 100%);
+   color: #fff;
+   }
+.deconnexion:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 3px solid #584ac2;
+   background: #4f4fcf;
+   background: -webkit-gradient(linear, left top, left bottom, from(#333bd6), to(#4b42cc));
+   background: -webkit-linear-gradient(top, #333bd6, #4f4fcf);
+   background: -moz-linear-gradient(top, #333bd6, #4f4fcf);
+   background: -ms-linear-gradient(top, #333bd6, #4f4fcf);
+   background: -o-linear-gradient(top, #333bd6, #4f4fcf);
+   background-image: -ms-linear-gradient(top, #333bd6 0%, #4f4fcf 100%);
+   color: #ffffff;
+   }
+.deconnexion
+{
+	position: absolute;
+	top: 5%;
+	right: 1.5%; 	
+}

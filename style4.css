@@ -1,0 +1,46 @@
+body
+{
+	margin: 0;
+	padding: 0
+}
+.bloc1
+{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	top: 0;
+	text-align: left;
+	background-color: green;
+}
+
+.bloc2
+{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	bottom: 0%;
+	text-align: center;
+	background-color: red;
+}
+
+.bloc3
+{
+	position: absolute;
+	height: 60%;
+	width: 30%;
+	text-align: left;
+	background-color: yellow;
+	top: 20%;
+}
+
+.bloc4
+{
+	position: absolute;
+	height: 60%;
+	width: 70%;
+	text-align: left;
+	background-color: blue;
+	top: 20%;
+	right: 0;
+	padding-left: 5%;
+}
